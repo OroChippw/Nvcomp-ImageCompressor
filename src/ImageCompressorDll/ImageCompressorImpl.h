@@ -23,6 +23,8 @@ class NvcompCompressRunnerImpl
 private:
     cv::Mat compress_image;
     std::vector<std::string> files_list;
+    float mean_compress_time = 0.0;
+    float mean_decompress_time = 0.0;
 
 private:
     /* 通过和原图对比计算均方误差和峰值信噪比以评估图像质量 */
